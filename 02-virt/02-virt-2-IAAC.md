@@ -35,26 +35,26 @@ Push надежнее, так как исключает ситуацию, что
 	
 >
 
-	*VirtualBox
+VirtualBox
 	
 	```
 	Установила 6.1. версию
 	```
 		
-	*Vagrant
+Vagrant
 	
 	```
 	[Julia@fedora vagrantbentoubuntu]$ vagrant -v
 	Vagrant 2.2.19
 	```
 	
-	*Ansible
+Ansible
 	
 	```
 	```
 	
 
-	*Terraform 
+Terraform 
 	```
 		Почему-то не ставится черех yum. Подскажите как поставить из бинарника?
 	```
