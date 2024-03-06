@@ -33,26 +33,26 @@ Push надежнее, так как исключает ситуацию, что
 	- Terraform версии 1.5.Х (1.6.х может вызывать проблемы с яндекс-облаком),
 	- Ansible.
 
-	VirualBox
+	*VirualBox
 	
 	```
 	Установила 6.1. версию
 	```
 		
-	Vagrant
+	*Vagrant
 	
 	```
 	[Julia@fedora vagrantbentoubuntu]$ vagrant -v
 	Vagrant 2.2.19
 	```
 	
-	Ansible
+	*Ansible
 	
 	```
 	```
 	
 
-	Terraform 
+	*Terraform 
 	```
 		Почему-то не ставится черех yum. Подскажите как поставить из бинарника?
 	```
