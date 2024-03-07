@@ -60,6 +60,7 @@ ansible [core 2.12.10]
   python version = 3.10.11 (main, Apr  5 2023, 00:00:00) [GCC 12.2.1 20221121 (Red Hat 12.2.1-4)]
   jinja version = 3.0.3
   libyaml = True
+  
 	```
 	
 
