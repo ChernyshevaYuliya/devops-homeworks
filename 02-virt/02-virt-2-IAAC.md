@@ -50,6 +50,16 @@ Vagrant
 Ansible
 	
 	```
+	[Julia@fedora vagrantbentoubuntu]$ ansible --version
+ansible [core 2.12.10]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/home/Julia/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3.10/site-packages/ansible
+  ansible collection location = /home/Julia/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible
+  python version = 3.10.11 (main, Apr  5 2023, 00:00:00) [GCC 12.2.1 20221121 (Red Hat 12.2.1-4)]
+  jinja version = 3.0.3
+  libyaml = True
 	```
 	
 
@@ -62,7 +72,47 @@ Terraform
 ## Задача 4*
 
 Vagrant
-
+```
+[Julia@fedora ~]$ cd vagrantbentoubuntu/
+[Julia@fedora vagrantbentoubuntu]$ vagrant box add bento/ubuntu-20.04 ae2cae1d-d99d-491f-b862-71afb5d46c0b --force
+==> box: Box file was not detected as metadata. Adding it directly...
+==> box: Adding box 'bento/ubuntu-20.04' (v0) for provider: 
+    box: Unpacking necessary files from: file:///home/Julia/vagrantbentoubuntu/ae2cae1d-d99d-491f-b862-71afb5d46c0b
+==> box: Successfully added box 'bento/ubuntu-20.04' (v0) for 'virtualbox'!
+[Julia@fedora vagrantbentoubuntu]$ vagrant up --provider=virtualbox
+Bringing machine 'server1.netology' up with 'virtualbox' provider...
+==> server1.netology: Clearing any previously set forwarded ports...
+==> server1.netology: Clearing any previously set network interfaces...
+==> server1.netology: Preparing network interfaces based on configuration...
+    server1.netology: Adapter 1: nat
+    server1.netology: Adapter 2: hostonly
+==> server1.netology: Forwarding ports...
+    server1.netology: 22 (guest) => 20011 (host) (adapter 1)
+    server1.netology: 22 (guest) => 2222 (host) (adapter 1)
+==> server1.netology: Running 'pre-boot' VM customizations...
+==> server1.netology: Booting VM...
+==> server1.netology: Waiting for machine to boot. This may take a few minutes...
+    server1.netology: SSH address: 127.0.0.1:2222
+    server1.netology: SSH username: vagrant
+    server1.netology: SSH auth method: private key
+    server1.netology: 
+    server1.netology: Vagrant insecure key detected. Vagrant will automatically replace
+    server1.netology: this with a newly generated keypair for better security.
+    server1.netology: 
+    server1.netology: Inserting generated public key within guest...
+    server1.netology: Removing insecure key from the guest if it's present...
+    server1.netology: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> server1.netology: Machine booted and ready!
+==> server1.netology: Checking for guest additions in VM...
+==> server1.netology: Setting hostname...
+==> server1.netology: Configuring and enabling network interfaces...
+==> server1.netology: Mounting shared folders...
+    server1.netology: /vagrant => /home/Julia/vagrantbentoubuntu
+==> server1.netology: Running provisioner: ansible...
+playbook does not exist on the host: /home/Julia/ansible/provision.yml
+[Julia@fedora vagrantbentoubuntu]$ vagrant ssh
+Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 5.4.0-91-generic x86_64)
+```
 
 Ansible
 
