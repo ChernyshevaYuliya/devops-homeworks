@@ -1,6 +1,7 @@
 # Домашнее задание "Введение. Экосистема. Архитектура. Жизненный цикл Docker контейнера"
 
 ## Задача 1
+https://hub.docker.com/repository/docker/ychernysheva1986/my-nginx/general
 
 ## Задача 2
 Сценарий:
